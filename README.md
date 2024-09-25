@@ -10,7 +10,10 @@ Marks int,
 Grade varchar(10)
 );
 desc STUDENTS;
-insert into STUDENTS values
+insert into STUDENTS (Roll_No,
+Name_of_Student,
+Marks,
+Grade) values
 (1, 'Amal',85,'A'),
 (2, 'naseeb', 78, 'B'),
 (3, 'namshi', 92, 'A'),
@@ -25,12 +28,12 @@ insert into STUDENTS values
 select* from STUDENTS;
 # 2) Add a column named Contact to the STUDENT table.
 alter table STUDENTS add Contact varchar(15);
-#3) Remove the grade column from the STUDENT table.
+# 3) Remove the grade column from the STUDENT table.
 alter table STUDENTS drop Grade;
-#4) Rename the table to CLASSTEN.
+# 4) Rename the table to CLASSTEN.
 Rename table STUDENTs  to CLASSTEN;
 select* from CLASSTEN;
-#5) Delete all rows from the Table.
+# 5) Delete all rows from the Table.
 truncate table CLASSTEN;
-#) Remove the table from the database.
+# 6) Remove the table from the database.
 Drop table CLASSTEN;
